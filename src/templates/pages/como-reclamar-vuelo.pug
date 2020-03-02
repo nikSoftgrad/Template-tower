@@ -1,0 +1,49 @@
+extends ../layouts/main
+include ../blocks/claim/claim
+
+block content
+
+  +b.page--compensation
+    +e.row
+      +b.banner--compensation
+        .container
+          +e.content
+            +e.title Claim your compensation
+            +e.description Have you been waiting for your flight for more than 3 hours? You have right to claim, you only need to fill the form and we will get the best compensation for you.
+
+          +e.img-percent
+            img(src="assets/images/percent-claim.png")
+
+    +e.row--mt-reverse.--center
+      .container
+        +claim()
+
+    +e.row--steps
+      .container
+        .title.title--lg.title--center You compensation is 3 steps away
+
+        +b.list-steps
+          +e.item
+            +b.step
+              +e.icon--clime
+                img(src="assets/images/tap.png")
+              +e.text Create a #[span Claim]
+
+          +e.item
+            +b.step
+              +e.icon--passanger
+                img(src="assets/images/man.png")
+              +e.text Add #[span passengers]
+
+          +e.item
+            +b.step
+              +e.icon--doc
+                img(src="assets/images/copy.png")
+              +e.text Upload #[span documents]
+
+    +e.row--banner
+      +b.banner--first
+        .container
+          +e.content
+            +e.title 99%
+            +e.description of successful claims

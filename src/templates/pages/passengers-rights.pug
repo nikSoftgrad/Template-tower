@@ -1,0 +1,124 @@
+extends ../layouts/main
+include ../blocks/claim/claim
+
+block content
+
+  +b.page--claim
+    +e.row
+      +b.banner--claim
+        .container
+          +e.title Rights of air passengers
+
+    +e.row--mt-lg.--center
+      .container
+        +claim()
+
+    +e.row--mt-lg
+      .container
+        +b.list-claim--sm
+          +e.item
+            +b.card-claim--one.--xs
+              +e.title In what cases can I claim?
+              +e.content
+                +e.item
+                  .plus +
+                  | Claim for flight delay
+                +e.item
+                  .plus +
+                  | Claim for flight cancellation
+                +e.item
+                  .plus +
+                  | Overbooking
+              +e.action
+                +b.BUTTON.btn--lg
+                  span CLAIM now
+
+          +e.item
+            +b.card-claim--two.--xs
+              +e.title Compensation and distances
+              +e.content--sm
+                +e.description The rights of the passenger establish relationship between the distance of the flight and the economic compensation
+                +e.item--sm
+                  +b.li-dot
+                    +e.left 0 - 1500 km
+                    +e.middle
+                    +e.right 250€
+                +e.item--sm
+                  +b.li-dot
+                    +e.left 1500 - 3500 km
+                    +e.middle
+                    +e.right 400€
+                +e.item--sm
+                  +b.li-dot
+                    +e.left + 3500 km
+                    +e.middle
+                    +e.right 600€
+
+          +e.item
+            +b.card-claim--three.--xs
+              +e.title In which cases there is no compensation?
+              +e.content
+                +e.description Cancellation due to circumstances extraordinary (adverse weather, etc.)
+                +e.description If you were informed of the delay at least two weeks in advance
+                +e.description If you were offered an alternative to the same route with a similar schedule
+
+    +e.row--mt-lg
+      +b.section--faq
+        .container
+          +b.faq
+            +e.left
+              +e.row
+                +e.title Airlines are required to keep passengers informed at all times if flights suffer delays, flight cancellations, etc., but…
+                +e.subtitle Defending your rights before an airline can be difficult, have our experts in air claims!
+                +e.descr-accent + European rights for air passengers
+                +e.descr-accent + EU Legation
+                +e.descr-accent + Regulation EC/261 2004
+              +e.row--tablet-img
+                img(src="assets/images/faq-img.png", alt="")
+              +e.row
+                +e.description They often just do not do it (they find it cheaper). The delay of a flight can be due to diverse reasons, from the lack of personnel available to mechanical problems. The technical problems that cause the cancellation or delay of flights do not constitute "extraordinary circumstances" that could exempt the liability of the airline! (Although some of them may try to convince you that they do).
+
+              +e.row--btn
+                +b.A(href="help.html").btn--lg
+                  span CHECK THE FAQ
+
+            +e.right
+              +e.img
+                img(src="assets/images/faq-img.png", alt="")
+
+    +e.row
+      +b.banner--second
+        .container
+          +e.content
+            +e.description If you have suffered some of these incidents in the last 5 years, you can claim and you are entitled to financial compensation.
+
+    +e.row--mt-lg
+      .container
+        +b.list-claim--sm
+          +e.item
+            +b.card-claim--one.--sm.--column
+              +e.title Claim for flight delay
+              +e.content
+                +e.description If you have suffered more than 3 hours of delay
+
+              +e.action
+                +b.A(href="como-reclamar-vuelo.html").btn--lg
+                  span CLAIM
+          +e.item
+            +b.card-claim--two.--sm.--column
+              +e.title Claim for cancelled flight
+              +e.content
+                +e.description Without previous notice of the airline
+
+              +e.action
+                +b.A(href="como-reclamar-vuelo.html").btn--lg
+                  span CLAIM
+          +e.item
+            +b.card-claim--three.--sm.--column
+              +e.title Overbooking claim
+              +e.content
+                +e.description No alternative route option
+
+              +e.action
+                +b.A(href="como-reclamar-vuelo.html").btn--lg
+                  span CLAIM
