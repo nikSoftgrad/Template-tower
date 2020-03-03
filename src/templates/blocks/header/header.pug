@@ -1,21 +1,21 @@
 mixin header()
+  +b.HEADER.header
+    .container
 
-    +b.HEADER.header
-      .container
+      +e.search-form
+        input(type="text" placeholder="SEARCH")
 
-        +e.search-form
-          input(type="text" placeholder="SEARCH")
+      +e.main
+        a(href="/").logo
+          img(src="/assets/images/logo.png")
 
-        +e.main
-          a(href="/").logo
-            img(src="/assets/images/logo.png")
+      +e.right-button
+        +b.header-button
+          +e.profile-button
+            a(href="/").profile-icon
+                
 
-        +e.right-button
-          +b.header-button
-            +e.profile-button
-              a(href="/").profile-icon
-                img(src="/assets/images/profile.png")
-
-            +e.basket-button
-              a(href="/").bag-icon
-                img(src="/assets/images/bag.png")
+          +e.basket-button
+            a(href="/").bag-icon
+              +b.bag-count
+                span.count 5

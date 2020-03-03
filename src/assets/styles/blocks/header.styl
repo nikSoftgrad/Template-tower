@@ -11,7 +11,8 @@
         margin-left 46px    
 
     &__main 
-        margin-left 60px  
+        margin 5px 0px 0px 60px
+
 
     &__search-form
         position relative
@@ -22,11 +23,11 @@
                 height 20px
                 left 129px
                 top 16px
+                right: 16px
                 content ""
-            
-               
+             
        input[type=text] 
-            max-width 165px
+            width 165px
             height 54px
             background-color #222
             border-radius 7px 7px
@@ -35,27 +36,63 @@
 
             &::placeholder
                 color #fff
-                font-family "Signika Negative"
+                
                 font-size 13px
                 padding-left 17px 
                 font-weight 400
                 text-transform uppercase
-              
-
-
-
+     
     &__right-button
         .header-button
             display flex 
             
-
-            &__profile-button,&__basket-button
-                display flex 
-                align-items center
-                justify-content center
-                width 134px
+            &__profile-button .profile-icon,&__basket-button .bag-icon
                 height 129px
                 background-color #222
+                position relative
 
-             &__profile-button
-                margin-right 2px      
+            &__profile-button .profile-icon
+                display block
+                width 137px  
+
+                &::before 
+                    position absolute
+                    background url('/assets/images/profile.png') no-repeat
+                    width 42px
+                    height 32px
+                    left 39%
+                    top 39%
+                    content ""
+
+             &__basket-button .bag-icon
+                margin-left 1px
+                width 132.5px 
+                display block
+                position relative
+
+                &::before 
+                    position absolute
+                    background url('/assets/images/Bag.png') no-repeat
+                    width 30px
+                    height 35px
+                    left 34%
+                    top 36%
+                    content ""
+
+                .bag-count 
+                  border-radius 50%
+                  background #4bb44b
+                  width 24px
+                  height 24px
+                  position absolute 
+                  top 68px
+                  right 41px
+                  color: #fff
+
+                  .count 
+                    padding 7px 9px
+                    font-size: 15px;
+                    font-weight: 700;               
+                    
+
+                
