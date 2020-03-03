@@ -1,98 +1,99 @@
 .header
-    height 129px
-    background-color #fcdb00
+  height 129px
+  background-color #fcdb00
 
-    .container
-        display flex 
-        justify-content space-between
-        align-items center
+  .container
+    display flex 
+    justify-content space-between
+    align-items center
         
-    &__search-form
-        margin-left 46px    
+  &__search-form
+      margin-left 46px    
 
-    &__main 
-        margin 5px 0px 0px 60px
+  &__main 
+      margin 4px 0px 0px 60px
 
+  &__search-form
+    position relative
 
-    &__search-form
-        position relative
-        &::after 
-                position absolute
-                background url('/assets/images/Loupe_Icon.png') no-repeat
-                width 20px
-                height 20px
-                left 129px
-                top 16px
-                right: 16px
-                content ""
-             
-       input[type=text] 
-            width 165px
-            height 54px
-            background-color #222
-            border-radius 7px 7px
-            border none
+    &::after 
+      position absolute
+      background url('/assets/images/Loupe_Icon.png') no-repeat
+      width 20px
+      height 20px
+      left 129px
+      top 16px
+      right: 16px
+      content ""
+                    
+    input[type=text] 
+        width 165px
+        height 54px
+        background-color #222
+        border-radius 4px
+        border none
+        box-sizing border-box
             
-
-            &::placeholder
-                color #fff
-                
-                font-size 13px
-                padding-left 17px 
-                font-weight 400
-                text-transform uppercase
+        &::placeholder
+          color #fff
+          font-size 13px
+          padding-left 17px 
+          font-weight 400
+          text-transform uppercase
      
-    &__right-button
-        .header-button
-            display flex 
+  &__right-button
+
+      .header-button
+        display flex 
             
-            &__profile-button .profile-icon,&__basket-button .bag-icon
-                height 129px
-                background-color #222
-                position relative
+        &__profile-button .profile-icon, &__basket-button .bag-icon
+          height 129px
+          background-color #222
+          position relative
 
-            &__profile-button .profile-icon
-                display block
-                width 137px  
+        &__profile-button .profile-icon
+          display block
+          width 137px  
 
-                &::before 
-                    position absolute
-                    background url('/assets/images/profile.png') no-repeat
-                    width 42px
-                    height 32px
-                    left 39%
-                    top 39%
-                    content ""
+          &::before 
+            position absolute
+            background url('/assets/images/profile.png') no-repeat
+            width 42px
+            height 32px
+            left 40%
+            top 39%
+            content ""
 
-             &__basket-button .bag-icon
-                margin-left 1px
-                width 132.5px 
-                display block
-                position relative
+        &__basket-button .bag-icon
+          margin-left 1px
+          width 132.5px 
+          display block
+          position relative
 
-                &::before 
-                    position absolute
-                    background url('/assets/images/Bag.png') no-repeat
-                    width 30px
-                    height 35px
-                    left 34%
-                    top 36%
-                    content ""
+          &::before 
+            position absolute
+            background url('/assets/images/Bag.png') no-repeat
+            width 30px
+            height 35px
+            left 45px
+            top 47px
+            content ""
 
-                .bag-count 
-                  border-radius 50%
-                  background #4bb44b
-                  width 24px
-                  height 24px
-                  position absolute 
-                  top 68px
-                  right 41px
-                  color: #fff
+          .bag-count 
+            border-radius 50%
+            background #4bb44b
+            width 24px
+            height 24px
+            position absolute 
+            top 68px
+            right 41px
+            color: #fff
 
-                  .count 
-                    padding 7px 9px
-                    font-size: 15px;
-                    font-weight: 700;               
+            .count 
+              margin 7px 8px 6px 9px 
+              
+              font-size 15px
+              font-weight 500              
                     
 
                 
