@@ -1,0 +1,61 @@
+.header
+    height 129px
+    background-color #fcdb00
+
+    .container
+        display flex 
+        justify-content space-between
+        align-items center
+        
+    &__search-form
+        margin-left 46px    
+
+    &__main 
+        margin-left 60px  
+
+    &__search-form
+        position relative
+        &::after 
+                position absolute
+                background url('/assets/images/Loupe_Icon.png') no-repeat
+                width 20px
+                height 20px
+                left 129px
+                top 16px
+                content ""
+            
+               
+       input[type=text] 
+            max-width 165px
+            height 54px
+            background-color #222
+            border-radius 7px 7px
+            border none
+            
+
+            &::placeholder
+                color #fff
+                font-family "Signika Negative"
+                font-size 13px
+                padding-left 17px 
+                font-weight 400
+                text-transform uppercase
+              
+
+
+
+    &__right-button
+        .header-button
+            display flex 
+            
+
+            &__profile-button,&__basket-button
+                display flex 
+                align-items center
+                justify-content center
+                width 134px
+                height 129px
+                background-color #222
+
+             &__profile-button
+                margin-right 2px      
