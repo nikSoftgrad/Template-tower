@@ -1,2 +1,25 @@
 mixin header()
-  div  hhh
+  +b.HEADER.header
+    +b.navbar
+      .container
+
+        +b.menu-button
+          +e.line
+          +e.line
+          +e.line
+
+        +b.logo
+          +e.text Фабрика скинвали №1
+          +e.description Ведущий производитель скинвали
+
+        +b.mobile-phone
+          +e.A(href="tel: +79121234567").link-phone +7 912 123-45-67
+          +e.small-text без выходных 9-21
+
+        +b.landline-phone
+          +e.A(href="tel: +79121234567").link-phone +7 912 123-45-67
+          +e.A(href="mailto: iform@mail.cu").small-text iform@mail.cu
+
+        +b.navbar-button
+          +e.button Получить консультацию
+
