@@ -6,16 +6,292 @@ block content
     //- hero
     +e.row
       +b.hero
-        .container
-          +e.title
-            |Гарантия 
-            |минимальной цены
-            |на скинали
-          +e.subtitle от 3 000 р/м2
-        
-          +e.BUTTON.button Заказать скинали
-            
+        +b.main-bg
+          .container
+            +e.title
+              |Гарантия 
+              |минимальной цены
+              |на скинали
+            +e.subtitle от 3 000 р/м2
+          
+            +b.BUTTON.button Заказать скинали
 
+           
+        +b.SECTION.offer.section
+          .container
             
+            +e.block.offer-block
+              +e.title Оставьте заявку на расчет
+              +e.SPAN.subtitle и получите скидку 30% на изготовление скинали или фартука для кухни
 
-   
+            +b.FORM(action="#").form
+              +e.row
+                +e.group
+                  label(for="name1").input-label Вид стекла
+                  input(type="text" id="name1").input.input-row
+                +e.group
+                  label(for="name2").input-label Ширина, см
+                  input(type="text" id="name2").input.input-row
+                +e.group
+                  label(for="name3").input-label Высота, см
+                  input(type="text" id="name3").input.input-row
+
+              +e.row
+                +e.checkbox
+                  input(type="checkbox" id="check1").input-check
+                  label(for="check1").check-label Монтаж
+                +e.checkbox
+                  input(type="checkbox" id="check2").input-check
+                  label(for="check2").check-label Доставка
+                  
+
+              +e.row
+                +e.group
+                  label(for="name4") Вид стекла
+                  input(type="text" id="name4" placeholder="Ваше имя").input
+                +e.group
+                  label(for="name5") Ширина, см
+                  input(type="text" id="name5" placeholder="Ваш телефон").input
+                +e.row
+                  input(type="submit" value="получить скидку").button
+          
+        +b.SECTION.feature.section
+          .container
+            +e.title.title Наши преймущества
+
+            +b.feature-block
+              +e.item
+                img(src="../../assets/images/feature-1.png", alt="#").img-feature
+                p.text Бесплатный дизайн-макет
+              +e.item
+                img(src="../../assets/images/feature-2.png", alt="#").img-feature
+                p.text Бесплатный дизайн-макет    
+              +e.item
+                img(src="../../assets/images/feature-3.png", alt="#").img-feature
+                p.text Бесплатный дизайн-макет 
+              +e.item
+                img(src="../../assets/images/feature-4.png", alt="#").img-feature
+                p.text Бесплатный дизайн-макет 
+              +e.item
+                img(src="../../assets/images/feature-5.png", alt="#").img-feature
+                p.text Бесплатный дизайн-макет 
+              +e.item
+                img(src="../../assets/images/feature-6.png", alt="#").img-feature
+                p.text Бесплатный дизайн-макет 
+
+        +b.SECTION.catalog.section
+          .container
+            +e.title.title Каталог скинали
+
+            +b.catalog-block
+              +e.item
+                img(src="../../assets/images/catalog-image-1.png", alt="").img-catalog
+                SPAN.tag Колажи
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like
+                    img(src="../../assets/images/like.png", alt="")
+                    
+              +e.item
+                img(src="../../assets/images/catalog-image-2.png", alt="").img-catalog
+                SPAN.tag Авторская коллекция 
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like 
+                    img(src="../../assets/images/like.png", alt="")
+                
+              +e.item
+                img(src="../../assets/images/catalog-image-3.png", alt="").img-catalog
+                SPAN.tag Колажи
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like 
+                    img(src="../../assets/images/like.png", alt="")
+
+              +e.item
+                img(src="../../assets/images/catalog-image-4.png", alt="").img-catalog
+                SPAN.tag Авторская коллекция
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like
+                    img(src="../../assets/images/like.png", alt="")
+
+              +e.item
+                img(src="../../assets/images/catalog-image-5.png", alt="").img-catalog
+                SPAN.tag Колажи
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like 
+                    img(src="../../assets/images/like.png", alt="")
+
+              +e.item
+                img(src="../../assets/images/catalog-image-6.png", alt="").img-catalog
+                SPAN.tag Авторская коллекция
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like 
+                    img(src="../../assets/images/like.png", alt="")
+
+              +e.item
+                img(src="../../assets/images/catalog-image-7.png", alt="").img-catalog
+                SPAN.tag Колажи
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like 
+                    img(src="../../assets/images/like.png", alt="")
+
+              +e.item
+                img(src="../../assets/images/catalog-image-8.png", alt="").img-catalog
+                SPAN.tag Авторская коллекция
+                +e.buttons
+                  +b.BUTTON.button-fitting Примерить онлайн
+                  +b.BUTTON.button-add Заказать
+                  +b.BUTTON.button-like 
+                    img(src="../../assets/images/like.png", alt="")
+
+            +b.catalog-button
+              A(href="#").button смотреть весь каталог скинали
+              +e.text Более 3000 изображений скинали в 25 рубриках
+      
+      +b.SECTION.blog.section
+          .container
+            
+            +b.blog-block
+              +b.blog-header
+                +e.title Полезное или что важно знать о скинали
+                +e.A(href="#").link Читать все статьи
+
+              +b.blog-list
+                +e.item
+                  +e.IMG(src="../../assets/images/blog-post-1.png", alt="#").blog-img
+                  +e.text текс шляпа
+                +e.item
+                  +e.IMG(src="../../assets/images/blog-post-2.png", alt="#").blog-img
+                  +e.text текс шляпа
+                +e.item
+                  +e.IMG(src="../../assets/images/blog-post-3.png", alt="#").blog-img
+                  +e.text текс шляпа
+                +e.item
+                  +e.IMG(src="../../assets/images/blog-post-4.png", alt="#").blog-img
+                  +e.text текс шляпа  
+
+      +b.SECTION.price.section
+            .container
+
+              +e.title.title Цены и виды скинали
+            
+              +b.price-block
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-1.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-2.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-3.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-4.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-5.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-6.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку                              
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-7.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку                              
+                +b.price-card
+                  +e.imapge
+                    img(src="../../assets/images/price-8.png", alt="#").price-image               
+                  +e.text
+                    +e.pricetag
+                      +e.title Прозрачные
+                      +e.SPAN.cost от 3500 р/м2
+                    +e.button
+                      BUTTON.button Оставить заявку   
+
+      +b.SECTION.step.section
+            .container
+
+              +e.title.title Этапы работ
+            
+              +b.step-block
+                +e.item 
+                  +e.IMG(src="../../assets/images/feature-1.png", alt="#").step-image
+                  +e.title Монтаж
+                  +e.text Вы оставляете заявку и мы вам перезвоним
+                +e.item 
+                  +e.IMG(src="../../assets/images/feature-2.png", alt="#").step-image
+                  +e.title Монтаж
+                  +e.text Вы оставляете заявку и мы вам перезвоним
+                +e.item 
+                  +e.IMG(src="../../assets/images/feature-3.png", alt="#").step-image
+                  +e.title Монтаж
+                  +e.text Вы оставляете заявку и мы вам перезвоним
+                +e.item 
+                  +e.IMG(src="../../assets/images/feature-4.png", alt="#").step-image
+                  +e.title Монтаж
+                  +e.text Вы оставляете заявку и мы вам перезвоним
+                +e.item 
+                  +e.IMG(src="../../assets/images/feature-5.png", alt="#").step-image
+                  +e.title Монтаж
+                  +e.text Вы оставляете заявку и мы вам перезвоним
+                +e.item 
+                  +e.IMG(src="../../assets/images/feature-6.png", alt="#").step-image
+                  +e.title Монтаж
+                  +e.text Вы оставляете заявку и мы вам перезвоним
+
+
+
+
