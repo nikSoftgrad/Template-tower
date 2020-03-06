@@ -1,3 +1,25 @@
 mixin footer()
   +b.FOOTER.footer
-  
+    .container
+      +b.footer-block
+        +e.description
+          +e.H4.title фабрика скинвали №1
+          +e.SPAN.subtitle Ведущий производитель Скинали
+          +e.SPAN.copy © Фабрика Скинали №1
+
+        +e.pay-info
+          +e.IMG(src="../../../assets/images/webmoney-paying-logo.png").pay-logo
+          +e.IMG(src="../../../assets/images/yandex-pay-logo.png").pay-logo
+          +e.IMG(src="../../../assets/images/master-card-logo.png").pay-logo
+          +e.IMG(src="../../../assets/images/visa-pay-logo.png").pay-logo
+
+        +e.contacts
+          +e.A(href="#").phone +7 399 123-45-67
+          +e.A(href="#").mail 345345@mail.cu
+          +e.social
+            +e.A(href="#").link
+              +e.IMG(src='../../../assets/images/vk.png').image
+            +e.A(href="#").link
+              +e.IMG(src='../../../assets/images/facebook.png').image
+            +e.A(href="#").link
+              +e.IMG(src='../../../assets/images/twitter.png').image    
