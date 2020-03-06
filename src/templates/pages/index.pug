@@ -92,7 +92,7 @@ block content
                   +b.BUTTON.button-add Заказать
                   +b.BUTTON.button-like
                     img(src="../../assets/images/like.png", alt="")
-                    
+                  
               +e.item
                 img(src="../../assets/images/catalog-image-2.png", alt="").img-catalog
                 SPAN.tag Авторская коллекция 
@@ -291,7 +291,82 @@ block content
                   +e.IMG(src="../../assets/images/feature-6.png", alt="#").step-image
                   +e.title Монтаж
                   +e.text Вы оставляете заявку и мы вам перезвоним
+      
+      +b.SECTION.reviews.section
+            .container
+              +e.title.title ОТЗЫВЫ НАШИХ КЛИЕНТОВ
+            
+              +b.slider-block
+                +e.item
+                  +e.text Очень часто мы сталкиваеся с недополнимаением сотрудников банка, и иной раз идти
+                  +e.IMG(src="../../assets/images/review-1.png").image
+                  +e.SPAN.name Марина
+                +e.item
+                  +e.text Очень часто мы сталкиваеся с недополнимаением сотрудников банка, и иной раз идти
+                  +e.IMG(src="../../assets/images/review-2.png").image
+                  +e.SPAN.name Марина
+                +e.item
+                  +e.text Очень часто мы сталкиваеся с недополнимаением сотрудников банка, и иной раз идти
+                  +e.IMG(src="../../assets/images/review-3.png").image
+                  +e.SPAN.name Марина    
+      
+      +b.SECTION.offer.section
+          .container
+            
+            +e.block.offer-block
+              +e.title ищите где дешевле и лучше?
+              +e.SPAN.subtitle Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите её - и мы Вам пересчитаем заказ с максимальной скидкой
 
+            +b.FORM(action="#").form
+              +e.row
+                +e.group
+                  input(type="text" id="name1"  placeholder="ваше имя").input.input-row
+                +e.group
+                  input(type="text" id="name2"  placeholder="ваш телефон").input.input-row
+                +e.group
+                  input(type="text" id="name3"  placeholder="ваша цена").input.input-row
 
+              +e.row
+                +e.group
+                  input(type="submit" value="получить расчет со скидкой").button
+                +e.group
+                  +e.SPAN.policy Ваши данные надежно защищены. Отправление заявки ни к чему не обязывает.
+  
+      +b.SECTION.factory.section
+          .container
 
+            +e.title.title О производстве
+              
+            +b.factory-block
+              +e.image
+                +e.IMG(src="../../assets/images/factory-image.png").img
+              +e.text
+                +e.P Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      
+      +b.SECTION.contacts.section
+          .container
 
+            +e.title.title Контакты
+              
+            +b.contacts-block
+              +e.item
+                +e.IMG(src="../../assets/images/contact-1.png").image
+                +e.text
+                  +e.A(href="#").link +7 499 123 34 23
+
+              +e.item
+                +e.IMG(src="../../assets/images/contact-2.png").image
+                +e.text
+                  +e.A(href="#").link +7 499 123 34 23
+
+              +e.item
+                +e.IMG(src="../../assets/images/contact-3.png").image
+                +e.text
+                  +e.A(href="#").link +7 499 123 34 23    
+
+      +b.SECTION.questions.section
+          .container
+
+            +b.questions-block
+              +e.H3.title Остались вопросы?
+              +e.A(href="#").link Задайте их менеджеру
