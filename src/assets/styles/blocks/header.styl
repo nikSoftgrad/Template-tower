@@ -8,25 +8,28 @@
   .container
     margin 0 auto
     display flex
-    align-item center
-    min-height 80px
+    align-items center
     justify-content space-between
     align-items center
 
-.menu-nav
-  z-index -1
-  position fixed
-  width 100%
-  top 80px
-  background-color primary
-  transform translateY(-200%)
-    
-.elem
-  &__nav-item
-    color #fff
+// .flex-container
+//   display flex
+//   align-items center
+//   justify-content space-between
+//   height 50px
 
-.menu-nav--active
-  transform translateY(0%)     
+//   &__nav-item
+//     color #fff  
+
+// .menu-nav
+//   z-index -1
+//   position fixed
+//   width 100%
+//   top 80px
+//   background-color primary
+//   transition 0.2s
+//   transform translateY(200%)
+    
 
 .mobile-phone, .landline-phone
   text-align right
@@ -58,14 +61,18 @@
   border none
   border-right 1px solid rgba(#510bba, 0.1)
   border-left 1px solid rgba(#510bba, 0.1)
+  cursor pointer
+
+  // &:hover
+  //   .menu-nav
+  //     transform translateY(200%)    
 
   &__line
     display block
     width 20px
     height 3px
     background-color #89a9eb
-    margin 2px 0
-   
+    margin 2px 0  
 
 .logo
 
@@ -82,6 +89,7 @@
     color #6b6b6b
 
 .navbar-button
+  cursor pointer
 
   &__button
     border 2px solid primary 
@@ -90,3 +98,35 @@
     text-transform uppercase
     font-family ProximaNova-Semibold
     color primary
+
++below(md-breakpoint)
+  .header
+    .container
+      max-width 960px
+
++below(sm-breakpoint)
+  .header
+    .container
+      max-width 750px
+  
+  .mobile-phone, .landline-phone
+    display none
+
++below(xs-breakpoint)
+  .header
+    .container
+      max-width 100%
+      padding 0 20px 
+
+    .logo 
+      display none
+    
+  .navbar-button
+
+    &__button
+      font-size 10px
+
+  .menu-button
+    height 60px
+
+    
