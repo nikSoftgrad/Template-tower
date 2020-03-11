@@ -29,8 +29,8 @@
   transition 0.4s
 
 .active
-  transform translateY(0%)   
-
+  transform translateY(0%) 
+  
 .mobile-phone, .landline-phone
   text-align right
 
@@ -70,6 +70,11 @@
     background-color #89a9eb
     margin 2px 0  
 
+  &:hover
+    .menu-button__line
+      width 25px
+      height 5px
+     
 .logo
 
   &__text
@@ -94,6 +99,8 @@
     text-transform uppercase
     font-family ProximaNova-Semibold
     color primary
+    &:hover
+      box-shadow 0 10px 25px rgba(0,0,0,0.2)
 
 +below(md-breakpoint)
   .header
