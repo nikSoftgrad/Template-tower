@@ -163,6 +163,7 @@ section
 	font-size 30px
 	font-weight 700px
 	text-align center
+	font-family ProximaNova-Semibold
 
 .catalog
 	background-color #f1f1f1
@@ -234,6 +235,7 @@ section
 	margin-bottom 70px
 
 	&__title
+		font-family ProximaNova-Semibold
 		font-size 24px
 		font-weight 500
 	
@@ -415,14 +417,20 @@ section
 
 .factory-block
 	display flex
-	justify-content space-between
+	justify-content center
 	align-items center 
+	flex-wrap wrap
 
 	&__text
 		flex-basis 50%
-		margin-left 50px
+		margin-left 60px
+		font-size 20px
+
+	&__image
+		margin 20px 0
 
 .contacts
+	background-color #f6f7f9
 
 	&__title
 		margin-bottom 100px
@@ -433,6 +441,7 @@ section
 	flex-wrap wrap
 
 	&__item
+		margin-bottom 10px
 		text-align center
 
 	&__image
@@ -519,6 +528,9 @@ section
 			left 50%
 			transform translateX(-50%)
 
+	.questions-block
+		padding 0 10px
+
 +below(sm-breakpoint)
 
 	.form
@@ -574,3 +586,8 @@ section
 		&__button-price.button
 			padding 28px 5px
 			margin-top 0px
+
+	.contacts-block
+
+		&__item
+			flex-basis 100%
