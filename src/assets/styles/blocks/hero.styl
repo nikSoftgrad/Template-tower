@@ -116,7 +116,51 @@ input[type="checkbox"]
 	padding-left 60px
 
 	&:checked + label:before
-		background-color green
+		background-color #507fe1
+
+.select
+	height 80px
+	padding-left 30px 
+	width 100%
+	border 1px solid #ddd
+	position relative
+	cursor pointer
+
+	&:after
+		content ''
+		position absolute
+		top 45%
+		right 20px
+		width 10px
+		height 10px
+		border 10px solid transparent 
+		border-top 10px solid #bbb	
+
+	&__select-checked
+		line-height 80px
+		display flex
+		align-items center
+		
+	
+	&__dropdown
+		position absolute
+		left 0
+		top 79px
+		width 100%
+		background-color #fff
+		border 1px solid #ddd
+		margin 0
+		list-style none
+		display none
+		z-index 10
+		&_open
+			display block
+		
+	&__option
+		padding 20px
+
+		&:hover
+			background-color #f1f1f1
 
 .check-label	
 	display flex

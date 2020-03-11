@@ -10,26 +10,26 @@
     display flex
     align-items center
     justify-content space-between
-    align-items center
 
-// .flex-container
-//   display flex
-//   align-items center
-//   justify-content space-between
-//   height 50px
+.menu-nav
+  .container
+    height 50px
 
-//   &__nav-item
-//     color #fff  
+  &__nav-item
+    color #fff  
 
-// .menu-nav
-//   z-index -1
-//   position fixed
-//   width 100%
-//   top 80px
-//   background-color primary
-//   transition 0.2s
-//   transform translateY(200%)
-    
+.menu-nav
+  z-index 0
+  left 0
+  position fixed
+  width 100%
+  top 80px
+  background-color primary
+  transform translateY(-300%)
+  transition 0.4s
+
+.active
+  transform translateY(0%)   
 
 .mobile-phone, .landline-phone
   text-align right
@@ -61,11 +61,7 @@
   border none
   border-right 1px solid rgba(#510bba, 0.1)
   border-left 1px solid rgba(#510bba, 0.1)
-  cursor pointer
-
-  // &:hover
-  //   .menu-nav
-  //     transform translateY(200%)    
+  cursor pointer 
 
   &__line
     display block
@@ -129,4 +125,11 @@
   .menu-button
     height 60px
 
-    
+  .menu-nav
+    .container
+      flex-direction column
+      height 300px
+
+.active
+  transform translateY(-7%)    
+        

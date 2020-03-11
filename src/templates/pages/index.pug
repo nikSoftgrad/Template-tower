@@ -27,8 +27,14 @@ block content
             +b.FORM(action="#").form
               +e.row
                 +e.group
-                  label(for="name1").input-label Вид стекла
-                  input(type="text" id="name1").input.input-row
+                  label(for="").input-label Вид стекла
+                  input(type="hidden" id="select-type" value="C печеньем").input.input-row
+                  +b.select
+                    +e.select-checked С печатью
+                    +e.UL.dropdown
+                      +e.LI(data-value="С печатью").option с печатью
+                      +e.LI(data-value="Без печати").option без печати  
+                       
                 +e.group
                   label(for="name2").input-label Ширина, см
                   input(type="text" id="name2").input.input-row
@@ -290,6 +296,31 @@ block content
                     +e.IMG(src="../../assets/images/feature-6.png", alt="#").step-image
                     +e.title Монтаж
                     +e.text Вы оставляете заявку и мы вам перезвоним
+        
+        +b.SECTION.before.section
+              .container
+                +e.title.title До и после
+                +b.before-slider-wrap
+                  +b.before-slider
+                    +e.item
+                      +b.before-after
+                        img(src="../../assets/images/sample-before.png", alt="#")
+                        img(src="../../assets/images/sample-after.png", alt="#")
+                    +e.item
+                      +b.before-after
+                        img(src="../../assets/images/sample-before.png", alt="#")
+                        img(src="../../assets/images/sample-after.png", alt="#")
+                    +e.item
+                      +b.before-after
+                        img(src="../../assets/images/sample-before.png", alt="#")
+                        img(src="../../assets/images/sample-after.png", alt="#")
+
+                  +b.before-slider-arrows
+                    +b.BUTTON.arrow.arrow-left
+                      img(src="../../assets/images/left.png", alt="#")
+                    +b.BUTTON.arrow.arrow-right  
+                      img(src="../../assets/images/right.png", alt="#")
+
         
         +b.SECTION.reviews.section
               .container

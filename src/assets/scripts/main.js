@@ -1,29 +1,28 @@
-const collapsed = document.querySelector('#collapsed');
-const collapsedMenu = document.querySelector('#collapsed-menu');
+$(window).load(function() {
+  $(".before-after").twentytwenty({
+    before_label: 'Без скинали',
+    after_label: 'Со скинали',
+  });
 
-// mobile header
-collapsed.addEventListener('click', function(){
-  collapsedMenu.classList.toggle('isOpen');
-})
+  $(".before-slider").slick({
+    draggable: false,
+    dots: true,
+    dotsClass: 'before-slider__dots',
+    prevArrow: $('.arrow-left'),
+    nextArrow: $('.arrow-right'),
+  });
 
-// tabs
-document
-  .querySelectorAll('.tabs__item')
-  .forEach(item=>{
-    item.addEventListener('click', function(e){
-      document
-        .querySelectorAll('.tabs__item')
-        .forEach(item=>item.classList.remove('active'))
+  $('.menu-button').on('click',function(){
+    $('.menu-nav').toggleClass('active');
+  });
 
-      this.classList.add('active')
-    })
-  })
-
-// accordion
-document
-  .querySelectorAll('.accordion__item')
-  .forEach(item=>{
-    item.addEventListener('click', function(e){
-      this.classList.toggle('isActive')
-    })
-  })
+  $('.select').on('click', function(){
+    $('.select__dropdown').toggleClass('select__dropdown_open');
+  });
+  $('.select__option').on('click', function(){
+    var value = $(this).attr('data-value');
+    $('#select-type').val(value);
+    $('.select__select-checked').text(value);
+    $('.select__dropdown').toggleClass('select__dropdown_open');
+  });
+});
